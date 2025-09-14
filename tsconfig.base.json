@@ -14,7 +14,17 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@entities/*": ["libs/entities/*"],
+      "@features/*": ["libs/features/*"],
+      "@seo-platform/ui-web": ["libs/shared/ui-web/src/index.ts"],
+      "@seo-platform/ui-web/server": ["libs/shared/ui-web/src/server.ts"],
+      "@seo-platform/utils": ["libs/shared/utils/src/index.ts"],
+      "@shared/*": ["libs/shared/*"],
+      "@shared/ui/*": ["libs/shared/ui/*"],
+      "@shared/utils/*": ["libs/shared/utils/*"]
+    },
+    "strict": true
   },
   "exclude": ["node_modules", "tmp"]
 }
